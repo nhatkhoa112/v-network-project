@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { login } from '../redux/actions/authAction';
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,7 +10,7 @@ const Login = () => {
 
   const [typePass, setTypePass] = useState(false);
 
-  const { auth } = useSelector((state) => state);
+  const { auth, alert } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   if (auth.token) return <Redirect to="/" />;

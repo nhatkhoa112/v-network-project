@@ -20,4 +20,12 @@ ReactDOM.render(
   container
 );
 
-<DataProvider></DataProvider>;
+// root.render(
+//   <React.StrictMode>
+//     <DataProvider>
+//       <Router>
+//         <App />
+//       </Router>
+//     </DataProvider>
+//   </React.StrictMode>
+// );

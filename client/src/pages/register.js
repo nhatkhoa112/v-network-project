@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { register } from '../redux/actions/authAction';
 
 const Register = () => {
-  const { auth } = useSelector((state) => state);
+  const { auth, alert } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const initialState = {

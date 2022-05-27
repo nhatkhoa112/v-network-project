@@ -9,6 +9,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 
 import Alert from './Components/alert/Alert';
+import Header from './Components/header/Header';
 
 function App() {
   const { auth } = useSelector((state) => state);
@@ -25,6 +26,8 @@ function App() {
 
       <div className="App">
         <div className="main">
+          {auth.token && <Header />}
+          {/* <Header /> */}
           <Switch>
             <Route exact path="/" component={auth.token ? Home : Login} />
             <Route exact path="/login" component={Login} />

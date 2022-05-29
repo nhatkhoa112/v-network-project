@@ -4,4 +4,4 @@ Activities:
 - Create the login - register page.
 - Implement the alert feature.
 - Create the header, search bar and menu in header.
-- 
+- Build the home page.

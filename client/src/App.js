@@ -9,15 +9,28 @@ import Login from './pages/login';
 import Register from './pages/register';
 
 import Alert from './Components/alert/Alert';
+import StatusModal from './Components/StatusModal';
 import Header from './Components/header/Header';
 
+import { getPosts } from './redux/actions/postAction';
+import { getSuggestions } from './redux/actions/suggestionsAction';
+import { getNotifies } from './redux/actions/notifyAction';
+
 function App() {
-  const { auth } = useSelector((state) => state);
+  const { auth, status } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(refreshToken());
   }, [dispatch]);
+
+  useEffect(() => {
+    if (auth.token) {
+      dispatch(getPosts(auth.token));
+      dispatch(getSuggestions(auth.token));
+      dispatch(getNotifies(auth.token));
+    }
+  }, [dispatch, auth.token]);
 
   return (
     <>
@@ -27,6 +40,7 @@ function App() {
       <div className="App">
         <div className="main">
           {auth.token && <Header />}
+          {status && <StatusModal />}
           {/* <Header /> */}
           <Switch>
             <Route exact path="/" component={auth.token ? Home : Login} />

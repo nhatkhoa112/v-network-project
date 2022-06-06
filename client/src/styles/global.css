@@ -53,6 +53,12 @@ img {
 /* -------- HEADER ---------- */
 @import url('./header.css');
 
+/* -------- HOME ---------- */
+@import url('./home.css');
+
+/* -------- STATUS_MODAL ---------- */
+@import url('./status_modal.css');
+
 /* --------- Responsive ------ */
 @media (max-width: 766px) {
   .header .navbar .logo {

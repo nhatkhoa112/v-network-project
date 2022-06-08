@@ -59,6 +59,9 @@ img {
 /* -------- STATUS_MODAL ---------- */
 @import url('./status_modal.css');
 
+/* -------- COMMENTS ---------- */
+@import url('./comments.css');
+
 /* --------- Responsive ------ */
 @media (max-width: 766px) {
   .header .navbar .logo {

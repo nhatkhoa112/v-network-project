@@ -7,6 +7,7 @@ import homePosts from './postReducer';
 import suggestions from './suggestionsReducer';
 import status from './statusReducer';
 import profile from './profileReducer';
+import detailPost from './detailPostReducer';
 
 export default combineReducers({
   auth,
@@ -17,4 +18,5 @@ export default combineReducers({
   suggestions,
   status,
   profile,
+  detailPost,
 });

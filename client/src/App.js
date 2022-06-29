@@ -2,15 +2,15 @@ import { Route, Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { refreshToken } from './redux/actions/authAction';
-import PageRender from './Components/customRouter/PageRender';
-import PrivateRouter from './Components/customRouter/PrivateRouter';
+import PageRender from './components/customRouter/PageRender';
+import PrivateRouter from './components/customRouter/PrivateRouter';
 import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/register';
 
-import Alert from './Components/alert/Alert';
-import StatusModal from './Components/StatusModal';
-import Header from './Components/header/Header';
+import Alert from './components/alert/Alert';
+import StatusModal from './components/StatusModal';
+import Header from './components/header/Header';
 
 import { getPosts } from './redux/actions/postAction';
 import { getSuggestions } from './redux/actions/suggestionsAction';

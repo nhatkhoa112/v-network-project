@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import Info from '../../Components/profile/Info';
-import Posts from '../../Components/profile/Posts';
-import Saved from '../../Components/profile/Saved';
+import Info from '../../components/profile/Info';
+import Posts from '../../components/profile/Posts';
+import Saved from '../../components/profile/Saved';
 
 import { useSelector, useDispatch } from 'react-redux';
 import LoadIcon from '../../images/loading.gif';

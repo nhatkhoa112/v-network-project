@@ -9,7 +9,10 @@ import status from './statusReducer';
 import profile from './profileReducer';
 import detailPost from './detailPostReducer';
 import message from './messageReducer';
-import discover from './discoverReducer'
+import discover from './discoverReducer';
+import call from './callReducer';
+import modal from './modalReducer';
+import online from './onlineReducer';
 
 export default combineReducers({
   auth,
@@ -22,5 +25,8 @@ export default combineReducers({
   profile,
   detailPost,
   message,
-  discover
+  discover,
+  call,
+  online, 
+  modal
 });

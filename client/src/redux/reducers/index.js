@@ -13,6 +13,9 @@ import discover from './discoverReducer';
 import call from './callReducer';
 import modal from './modalReducer';
 import online from './onlineReducer';
+import peer from './peerReducer';
+import socket from './socketReducer'
+
 
 export default combineReducers({
   auth,
@@ -28,5 +31,7 @@ export default combineReducers({
   discover,
   call,
   online, 
-  modal
+  modal,
+  peer,
+  socket
 });

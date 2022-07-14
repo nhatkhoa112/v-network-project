@@ -12,6 +12,7 @@ import LoadIcon from '../../images/loading.gif'
 
 const RightSide = () => {
     const { auth, message, theme, socket, peer } = useSelector(state => state)
+    
     const dispatch = useDispatch()
 
     const { id } = useParams()
